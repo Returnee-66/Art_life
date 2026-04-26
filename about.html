@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Life - О фирме</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Подключение иконок-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_about.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.php">
+                    <img src="images/logo/logo.png" alt="Art Life Logo" class="logo-image">
+                </a>
+            </div>
+            <!--Панель навигациии-->
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="services.php" class="nav-link">Услуги</a></li>
+                <li><a href="portfolio.php" class="nav-link">Портфолио</a></li>
+                <li><a href="log.php" class="nav-link">Личный кабинет</a></li>
+            </ul>
+            <!--Бургер меню-->
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <ul class="burger-menu" id="burgerMenu">
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="services.php" class="nav-link">Услуги</a></li>
+                <li><a href="portfolio.php" class="nav-link">Портфолио</a></li>
+                <li><a href="log.php" class="nav-link">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="content">
+    <section class="about-section">
+        <div class="container">
+            <h1 style="text-align: center;">О студии Art Life</h1>
+            <div class="about-text">
+                <p>Фирма ландшафтного дизайна Art Life — это команда профессионалов, создающих гармоничное пространство между природой и архитектурой с 2015 года.</p>
+                <p>Наша миссия — превращать обычные участки в уникальные сады, где каждый элемент продуман до мелочей. Мы верим, что ландшафтный дизайн — это искусство, которое делает жизнь красивее и комфортнее.</p>
+                <p>За 11 лет работы мы реализовали более 200 проектов: от уютных частных садов до масштабных общественных пространств. Наши работы отмечены премиями в области ландшафтной архитектуры.</p>
+            </div>
+            
+            <h2 style="text-align: center; margin-top: 50px;">Лучшие проекты</h2>
+            
+            <div class="slider-container"><!--Слайдер с проектами фирмы-->
+                <button class="slider-btn prev" id="prevBtn">❮</button>
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="images/about/project1.jpg" alt="Проект 1">
+                        <div class="slide-caption">
+                            <h3>Сад «Изумрудная долина»</h3>
+                            <p>Коттеджный поселок, 2024</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/about/project2.png" alt="Проект 2">
+                        <div class="slide-caption">
+                            <h3>Парк «Зеленый оазис»</h3>
+                            <p>Городской парк, 2023</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/about/project3.jpg" alt="Проект 3">
+                        <div class="slide-caption">
+                            <h3>Терраса «Небесный сад»</h3>
+                            <p>Жилой комплекс, 2024</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/about/project4.png" alt="Проект 4">
+                        <div class="slide-caption">
+                            <h3>Японский сад «Киото»</h3>
+                            <p>Частная резиденция, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next" id="nextBtn">❯</button>
+                <div class="slider-dots" id="dots"></div>
+            </div>
+            
+            <h2 style="text-align: center; margin-top: 50px;">Главные представители нашей команды</h2><!--Представители фирмы-->
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/about/team1.jpg" alt="Анна">
+                    <h3>Анна Петрова</h3>
+                    <p>Главный дизайнер</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/about/team2.jpg" alt="Михаил">
+                    <h3>Михаил Дмитриев</h3>
+                    <p>Ландшафтный архитектор</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/about/team3.png" alt="Елена">
+                    <h3>Елена Волкова</h3>
+                    <p>Агроном-дендролог</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--Подвал сайта-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>8-800-555-35-35</p>
+                <p>artlife@mail.ru</p>
+                <p>Москва, ул. Садовая, 15</p>
+                <div style="margin-top: 15px;">
+                    <a href="#" style="color: #64d894; margin-right: 15px; font-size: 24px;"><i class="fab fa-vk"></i></a>
+                    <a href="#" style="color: #64d894; margin-right: 15px; font-size: 24px;"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Клиентам</h4>
+                <ul class="footer-links">
+                    <li><a href="services.php">Услуги</a></li>
+                    <li><a href="portfolio.php">Портфолио</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="reg.php">Регистрация</a></li>
+                    <li><a href="log.php">Авторизация</a></li>
+                    <li><a href="profile.php">Личный кабинет</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Подключение JavaScript-->
+<script src=" js/js_about.js"></script>
+</body>
+</html>
